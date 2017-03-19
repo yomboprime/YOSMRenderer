@@ -2,7 +2,7 @@
 Description
 ===========
 
-This is a tool to render (Open Street Map)[http://osm.org] map data to .png image files.
+This is a tool to render [Open Street Map](http://osm.org) map data to .png image files.
 
 Requirements
 ============
@@ -59,13 +59,13 @@ npm install
 
 
 - Download the binary map data for your contry or your region of interest.
-Mine is Spain. You can find yours in (geofabrik)[http://download.geofabrik.de]
+Mine is Spain. You can find yours in [geofabrik](http://download.geofabrik.de)
 cd ..
 wget http://download.geofabrik.de/europe/spain-latest.osm.pbf.md5
 wget http://download.geofabrik.de/europe/spain-latest.osm.pbf
 
 - Download the stylesheet that transforms the map data in graphical data.
-I've used the default OSM style sheet. You can get more at https://github.com/mapnik/mapnik/wiki/StyleShare
+I've used the default OSM style sheet. You can find more at [the mapnik wiki](https://github.com/mapnik/mapnik/wiki/StyleShare)
 
 git clone https://github.com/gravitystorm/openstreetmap-carto.git
 
