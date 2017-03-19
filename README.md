@@ -42,13 +42,19 @@ sudo runuser -l postgres -c 'psql gis'
 	And then exit by pressing ctrl-c
 
 - Install mapnik-tools or mapnik-utils, wathever is in your system.
-This is for indexing the coastlines shapes (shapeindex util)
+This is for indexing the coastlines shapes (shapeindex util):
 
 sudo apt install mapnik-tools
  or
 sudo apt install mapnik-utils
 
+
+
+
 ---------------
+
+
+
 
 - Create a directory where all project data is to be stored (name it as you want):
 
