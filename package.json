@@ -1,0 +1,21 @@
+{
+  "name": "YOSMRenderer",
+  "version": "1.0.0",
+  "description": "Custom mapnik renderer",
+  "keywords": [
+    "mapnik",
+    "OSM",
+    "maps",
+    "renderer"
+  ],
+  "author": "yomboprime",
+  "contributors": [],
+  "dependencies": {
+    "carto": "^0.17.2",
+    "mapnik": "^3.5.14",
+    "mkdirp": "^0.5.1"
+  },
+  "scripts": {
+    "start": "node renderer.js"
+  }
+}
