@@ -33,10 +33,10 @@ Installation
         sudo runuser -l postgres -c 'psql gis'
 
         In this last command you enter a postgres command line. Enter this 2 lines:
-
+        
 	CREATE EXTENSION postgis;
 	CREATE EXTENSION hstore;
-
+        
 	And then exit by pressing ctrl-c
 
 - Install mapnik-tools or mapnik-utils, wathever is in your system.
@@ -61,6 +61,8 @@ This is for indexing the coastlines shapes (shapeindex util):
         cd YOSMRenderer
         npm install
 
+
+(This is the point you want to start from when re-creating the database from new map data.)
 
 - Download the binary map data for your contry or your region of interest.
 Mine is Spain. You can find yours in [geofabrik](http://download.geofabrik.de)
@@ -112,7 +114,7 @@ These coordinate parameters are for the island of Mallorca. Set them for your re
 
 The tiles generated cover the specified rectangle.
 
-node YOSMRenderer/renderer.js --minLon 2.2796592 --maxLon 3.506008 --minLat 39.2536645 --maxLat 39.9793632 --minZoom 0 --maxZoom 15
+        node YOSMRenderer/renderer.js --minLon 2.2796592 --maxLon 3.506008 --minLat 39.2536645 --maxLat 39.9793632 --minZoom 0 --maxZoom 15
 
 Parameters:
 
