@@ -28,13 +28,13 @@ Installation
 
 - Create the 'gis' data base where all data will be stored (set your_user_name):
 
-        sudo runuser -l postgres -c 'createuser your_user_name'
-        sudo runuser -l postgres -c 'createdb gis -O your_user_name'
-        sudo runuser -l postgres -c 'psql gis'
-        In this last command you enter a postgres command line. Enter this 2 lines:
-	CREATE EXTENSION postgis;
-	CREATE EXTENSION hstore;
-	And then exit by pressing ctrl-c
+ > sudo runuser -l postgres -c 'createuser your_user_name'
+ > sudo runuser -l postgres -c 'createdb gis -O your_user_name'
+ > sudo runuser -l postgres -c 'psql gis'
+ > In this last command you enter a postgres command line. Enter this 2 lines:
+ > CREATE EXTENSION postgis;
+ > CREATE EXTENSION hstore;
+ > And then exit by pressing ctrl-c
 
 - Install mapnik-tools or mapnik-utils, wathever is in your system.
 This is for indexing the coastlines shapes (shapeindex util):
