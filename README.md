@@ -97,10 +97,10 @@ Set the name of the .style and .osm.pbf files accordingly to your style and data
 
 cd ..
 
-```osm2pgsql --create --slim \
+`osm2pgsql --create --slim \
     --cache 1500 --number-processes 2 --hstore \
     --style ./openstreetmap-carto/openstreetmap-carto.style --multi-geometry \
-    ./spain-latest.osm.pbf```
+    ./spain-latest.osm.pbf`
 
 - Finally, generate the mapnik.xml file. Set the style file (.mml in this case) accordingly:
 
@@ -121,7 +121,7 @@ The tiles generated cover the specified rectangle.
 node YOSMRenderer/renderer.js --minLon 2.2796592 --maxLon 3.506008 --minLat 39.2536645 --maxLat 39.9793632 --minZoom 0 --maxZoom 15
 
 Parameters:
-```
+`
 --minLon -180 .. 180 The longitude of the left border of the rectangle of interest.
 --maxLon -180 .. 180 The longitude of the right border of the rectangle of interest.
 --minLat -90 .. 90 The latitude of the south border of the rectangle of interest.
@@ -129,7 +129,7 @@ Parameters:
 --minZoom 0 .. 22 The minimum Zoom level to process. Usually left this to 0
 --maxZoom 0 .. 22 The maximum zoom level to process.
 --mapFile <xml_file_name> The location of the XML file. Default: "../mapnik.xml"
-```
+`
 
 Here are some times it took me for processing some zoom levels for the entire island of Mallorca:
 
